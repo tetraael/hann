@@ -19,8 +19,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column; 
-            position: relative;
+            flex-direction: column; /* Change to column layout */
+            position: relative; /* Enable positioning for button */
         }
 
         .slider {
@@ -30,7 +30,7 @@
             position: relative;
             border: 2px solid #088F8F;
             border-radius: 10px;
-            margin-bottom: 20px; 
+            margin-bottom: 20px; /* Add some space below the slider */
         }
 
         .slides {
@@ -65,17 +65,17 @@
             right: 20px;
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #f44336;
-            color: white; 
+            background-color:  #088F8F; 
+            color: whitesmoke; 
             border: none; 
             border-radius: 5px; 
             cursor: pointer; 
         }
 
         .exit-button:hover {
-            background-color: #d32f2f; 
+            background-color:  #088F8F; 
         }
-        .message{
+                .message{
         	font-weight: bold;
         	color: deeppink;
         	font-family: monospace;
@@ -87,14 +87,22 @@
     <!-- Sliding Pictures Screen -->
     <div class="slider">
         <div class="slides">
-            <img src="1.png">
-            <img src="2.png">
-            <img src="3.png">
-            <img src="4.png">
+            <img src="file:///C:/Users/User/Desktop/hmb/1.png">
+            <img src="file:///C:/Users/User/Desktop/hmb/2.png">
+            <img src="file:///C:/Users/User/Desktop/hmb/3.png">
+            <img src="file:///C:/Users/User/Desktop/hmb/4.png">
         </div>
     </div>
 
     <div class="message">HAPPY MONTHSARY, HAN!! <33</div>
     
+    <button class="exit-button" onclick="home()"= "index.html";
+>Home</button>
+	<script>
+		function home() {
+				window.location.href = "index.html";
+			} 
+		
+	</script>
 </body>
 </html>
