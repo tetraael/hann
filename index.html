@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>kekekekek</title>
+	<style>
+		body {
+			background-image: url("bacgg.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 100vh;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.d{
+			color: red;
+		}
+		#el {
+			width: 90%;
+			max-width: 450px;
+			padding: 30px 20px;
+			color: white;
+			border-radius: 25px;
+			backdrop-filter: blur(20px);
+			text-align: center;
+			font-size: 16px;
+			font-family: monospace;
+
+		}
+		#Username {
+			width: 100%;
+			padding: 4px;
+			font-size: 16px;
+			text-align: center;
+						align-items: center;
+
+		}
+
+		}
+		#notif {
+			font-size: 15px;
+			font-family: Arial, sans-serif;
+		}
+		button {
+			background-color: lightskyblue;
+			outline-style: double;
+			outline-color: whitesmoke;
+			padding: 10px 15px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		button:hover {
+		}
+	</style>
+</head>
+<body>
+	<div id="el">
+		<p>Enter Date 2Day</p>
+		<d>hint:(24)<d>
+		<div class="input">
+			<input type="text" id="Username" placeholder="MM/DD/YYYY" />
+		</div>
+		<br>
+		<button onclick="login()">Login</button>
+		<br><br>
+		<span id="notif"></span>
+		<br>
+	</div>
+	<script>
+		function login() {
+			var correctDate = "02/24/2024";
+			var enteredDate = document.getElementById('Username').value;
+
+			if (correctDate === enteredDate) {
+				document.getElementById("notif").innerText = "YIPEEEE!";
+				document.getElementById("notif").style.color = "Blue";
+				window.location.href = "hehe.html";
+			} else {
+				document.getElementById("notif").innerText = "Halaa! Wrong Date!?!";
+				document.getElementById("notif").style.color = "darkred";
+			}
+		}
+	</script>
+</body>
+</html>
